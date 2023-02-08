@@ -1,0 +1,43 @@
+.rates {
+    @apply relative;
+
+    &_info {
+        @apply flex items-center;
+    }
+
+    &_title {
+        @apply block relative;
+        left: 0;
+        transform: rotate(-90deg);
+        max-width: 573px;
+        max-height: 120px;
+    }
+
+    &_list {
+        @apply grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        // grid-template-columns: 500px 298px 298px;
+        // grid-template-rows: 172px 172px 172px 172px;
+        grid-gap: 52px;
+    }
+
+    &_text {
+        @apply flex justify-between text-black;
+        margin-top: 125px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .item {
+        @apply flex;
+
+        & .one {
+            @apply bg-white;
+
+        }
+    }
+
+}

@@ -1,0 +1,36 @@
+//header
+header.header                  
+    .header_logo 
+        img(src='assets/img/logo-on-site.svg')
+    .header_nav
+        ul.nav_list
+            li.nav_list_li
+                a(href='#').nav_list_link='о нас'
+                    img(src="assets/img/icon/triangle.svg").nav_list_img
+                ul.nav_list_ul 
+                    +navLinkActive('#info','Информация')
+                    +navLinkActive('#our_work','Наши работы')
+                    +navLinkActive('#how_we','Оборудоввание')
+                    +navLinkActive('#adven','Материалы')
+                    +navLinkActive('#comm','Отзывы')
+                    +navLinkActive('#blog','Блог')
+            li.nav_list_li
+                a(href='#').nav_list_link.Servise='услуги'
+                    img(src="assets/img/icon/triangle.svg")
+                ul.nav_list_ul 
+                    +navLinkActive('#','Покрытие паркета лаком')
+                    +navLinkActive('#','Ремонт паркета')
+                    +navLinkActive('#','Циклёвка паркета')
+                    +navLinkActive('#','Циклёвка паркета без пыли')
+                    +navLinkActive('#','Циклёвка старого паркета')
+                    +navLinkActive('#','Шлифовка паркета')
+            +navLink('#','тарифы')
+            +navLink('#','калькулятор')
+            +navLink('#','контакт')
+    .header_contact
+        p +7 (495) 721-05-04
+        p +7 (495) 721-05-04
+    .header_mes 
+        +navMes('youtube')
+        +navMes('watsapp')
+        +navMes('telegram')

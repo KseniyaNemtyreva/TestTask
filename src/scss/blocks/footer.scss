@@ -1,0 +1,37 @@
+.footer {
+  @apply bg-white text-black;
+  padding-top: 26px;
+  padding-bottom: 56px;
+
+  &_top {
+    @apply flex;
+    margin-bottom: 16px;
+  }
+
+  .nav_list {
+    @apply flex;
+
+    & li {
+      margin-left: 50px;
+      max-width: 200px;
+      padding: 7px 10px;
+    }
+
+    & li:hover {
+      @apply bg-yellow;
+      min-width: 10px;
+      background: #EDE574;
+      border-radius: 36px;
+
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width:970px) {
+  .footer__left {
+    max-width: none;
+  }
+}

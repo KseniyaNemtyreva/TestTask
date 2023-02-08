@@ -1,0 +1,130 @@
+.header {
+  @apply flex justify-between;
+  align-items: center;
+  max-width: 1509px;
+  margin: 0 auto;
+  flex-direction: row;
+  max-height: 71px;
+  margin-top: 22px;
+  margin-bottom: 59px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  @media screen and (min-width: 480px) {
+    @media screen and (max-width: 720px) {
+      // @apply px-8;
+    }
+  }
+
+  @media screen and (min-width: 720px) {
+    @media screen and (max-width: 1400px) {
+      // @apply px-9;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    // @apply px-11;
+  }
+
+  &_nav {
+    .nav_list {
+      @apply flex text-center;
+
+      &_li {
+        @apply flex relative;
+        margin-left: 40px;
+
+        & img {
+          margin-left: 4.5px;
+          max-width: 8.99px;
+          max-height: 10px;
+          margin-top: 7px;
+        }
+      }
+
+      &_li:hover {
+        @apply bg-yellow;
+        border-radius: 36px;
+        padding: 7px 20px;
+
+        & img {
+          transform: rotate(90deg);
+        }
+      }
+
+      &_link {
+        @apply flex;
+      }
+
+      & ul {
+        @apply absolute bg-yellow text-center;
+        display: none;
+        max-width: 288px;
+        max-height: 276px;
+        min-width: 278px;
+        min-height: 50px;
+        border-radius: 30px;
+      }
+
+      &_li:hover ul {
+        display: block;
+        top: 30px;
+        flex-wrap: nowrap;
+        left: -80px;
+        padding: 15px 18px;
+
+        & a {
+          margin: 10px 0px;
+        }
+
+        & a:hover {
+          font-weight: bold;
+        }
+      }
+
+      & .nav_link {
+        @apply relative;
+        min-width: 60px;
+        max-height: 40px;
+        margin-left: 40px;
+
+        & .nav_list {
+          @apply block text-center;
+        }
+      }
+
+      .nav_link:hover {
+        @apply bg-yellow;
+        border-radius: 30px;
+        padding: 7px 20px;
+      }
+
+      &_ul {
+        & li {
+          margin: 10px 0px;
+        }
+      }
+    }
+  }
+
+  &_contact {
+    margin-left: 52px;
+
+    & p {
+      margin: 12px 0px;
+    }
+
+    & p:hover {
+      font-weight: bold;
+    }
+  }
+
+  &_mes {
+    @apply flex;
+
+    & a {
+      margin-left: 31px;
+    }
+  }
+}

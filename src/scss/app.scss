@@ -1,0 +1,57 @@
+/* Tailwind import */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* CSS print */
+@import 'base/print';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* Vendor */
+
+/* Components */
+/* Browser specific styles */
+@import 'dirty/hacks';
+
+
+/* Page layout */
+@import 'blocks/header';
+@import 'blocks/footer';
+@import "blocks/order";
+@import "blocks/rates";
+
+/* Pages styles */
+@import 'demo';
+
+
+
+* {
+    font-family: 'Montserrat';
+}
+
+.debug-screens {
+    @apply bg-light-blue;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 100%;
+}
+
+.wrapper-content {
+   
+    max-width: 1509px;
+    margin: 0 auto;
+}

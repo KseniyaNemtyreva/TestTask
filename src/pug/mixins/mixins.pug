@@ -1,0 +1,79 @@
+mixin item(title, descr)
+  .item
+    h2.item-title= title
+    p.item-descr= descr
+
+mixin navLink(link,text)
+  li
+    a(href=link).nav_link=text
+
+mixin navLinkActive(link,text)
+  li
+    a(href=link).nav_link_a=text
+
+mixin navMes(title)
+  if title=='youtube'
+    a(href="#")
+      img(src='assets/img/icon/youtube.svg' alt="youtube")
+  else if title=='watsapp'
+    a(href="#")
+      img(src='assets/img/icon/whatsapp.svg' alt="watsapp")
+  else
+    a(href="#")
+      img(src='assets/img/icon/telegram.svg' alt="telegram")
+
+mixin formOrder(name) 
+  .order__form 
+    form(action="#") 
+      input(type='text' maxlenght='11' placeholder='Номер телефона').form_text
+      div.form_check_policy 
+        input(type='checkbox').checkbox
+        label(for='policy').policy
+          | я согласен с 
+          span.text_underline политикой конфиденциальности
+    .button 
+      a(href="#")=name 
+
+mixin workPoints(name,title)
+  .item
+    .item_icon
+      img(src=name)
+    .item_text
+      p=title
+
+mixin btn(content)
+  .btn
+    p=content
+
+mixin ratesItem(Nameclass,rates,desc,price)
+  .item(class=Nameclass)
+    .item_rates 
+      h3=rates 
+    .item_content 
+      p=desc 
+      .item__price 
+        p=price 
+    +btn('Подробнее')
+
+mixin advanPoints(title,content,name)
+  .item    
+    .item_text
+      h2=title
+      p=content
+    .item_icon
+      img(src=name)
+
+mixin blockForm(title,text,name)      
+  h2=title
+  .content 
+    .content__text 
+      p=text 
+    +formOrder(name)
+
+mixin blogItem(img,data,title,text,content)
+  .blog_item 
+    img(src=img)
+    p=data 
+    h2=title 
+    p=text
+    +btn(content)
