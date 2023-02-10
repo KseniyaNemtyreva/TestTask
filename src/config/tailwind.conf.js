@@ -1,13 +1,12 @@
 const colorTheme = {
-  'black': 'var(--black)',
+  'black':'var(--black)',
   'white': 'var(--white)',
-  'light-blue': 'var(--light-blue)',
   'grey': 'var(--grey)',
   'yellow': 'var(--yellow)',
-  'grenn': 'var(--green)',
+  'green': 'var(--green)',
   'light-blue': 'var(--light-blue)',
-  'blue': 'var(--blue)',
-  'transparent': 'var(--transparent)',
+  'bluei': 'var(bluei)',
+  'transparent': 'var(transparent)',
 }
 
 const spacingTheme = Array(31).fill(null)

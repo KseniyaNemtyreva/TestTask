@@ -27,9 +27,14 @@
 
 /* Page layout */
 @import 'blocks/header';
-@import 'blocks/footer';
 @import "blocks/order";
 @import "blocks/rates";
+@import "blocks/how_we";
+@import "blocks/our_work";
+
+@import "blocks/questions";
+@import "blocks/blog";
+@import 'blocks/footer';
 
 /* Pages styles */
 @import 'demo';
@@ -51,7 +56,115 @@ h2 {
 }
 
 .wrapper-content {
-   
+
     max-width: 1509px;
     margin: 0 auto;
+}
+
+.button {
+    @apply flex relative text-black;
+    align-items: center;
+    border-radius: 90px;
+    max-width: 320px;
+    max-height: 57px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    background: linear-gradient(90deg, #EDE574 0%, #E1F5C4 100%);
+
+    & a {
+        margin: 18px 32px;
+    }
+}
+
+.button:hover {
+    background: inherit;
+    @apply bg-green;
+    border-bottom: 2px solid #FFFFFF;
+    box-shadow: 0px 4px 7px rgba(219, 222, 225, 0.9);
+}
+
+.order__form {
+    @apply flex;
+    font-family: 'Hind';
+
+    & .form_text {
+        @apply flex content-center text-grey;
+        padding: 18px 0;
+        padding-left: 20px;
+        background: #FFFFFF;
+        border-radius: 90px;
+        line-height: 100%;
+        max-width: 360px;
+        min-width: 340px;
+        max-height: 54px;
+        margin-bottom: 20px;
+    }
+}
+
+.order__form {
+    @apply flex;
+    font-family: 'Hind';
+
+    & .form_text {
+        @apply flex content-center bg-light-blue text-grey;
+        padding: 18px 0;
+        padding-left: 20px;
+        border-radius: 90px;
+        line-height: 100%;
+        max-width: 360px;
+        min-width: 340px;
+        max-height: 54px;
+        margin-bottom: 20px;
+    }
+
+    .policy {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 100%;
+        letter-spacing: -0.005em;
+
+        & .text_underline {
+            text-decoration: underline;
+        }
+    }
+
+    .checkbox {
+        margin-right: 5px;
+    }
+
+
+    .button {
+        @apply flex relative text-black;
+        left: 15px;
+    }
+}
+
+.block_form {
+    @apply flex bg-white;
+    border-radius: 30px;
+    flex-direction: column;
+    max-width: 1410px;
+    max-height: 366px;
+    padding: 49px 75px;
+    margin: 100px auto;
+
+    & h2 {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 100%;
+        margin-bottom: 77px;
+    }
+
+    .content {
+        @apply flex items-start;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+
+        &__text {
+            margin-right: 40px;
+            margin-top: 15px;
+        }
+    }
 }

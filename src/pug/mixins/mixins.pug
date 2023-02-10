@@ -1,6 +1,5 @@
-mixin item(title, descr)
+mixin item(descr)
   .item
-    h2.item-title= title
     p.item-descr= descr
 
 mixin navLink(link,text)
@@ -30,7 +29,7 @@ mixin formOrder(name)
         input(type='checkbox').checkbox
         label(for='policy').policy
           | я согласен с 
-          span.text_underline политикой конфиденциальности
+          a.text_underline политикой конфиденциальности
     .button 
       a(href="#")=name 
 
@@ -42,17 +41,19 @@ mixin workPoints(name,title)
       p=title
 
 mixin btn(content)
-  .btn
-    p=content
+  .button
+    a(href="#")=content
 
-mixin ratesItem(Nameclass,rates,desc,price)
+mixin ratesItem(Nameclass,rates,des,desc,price,rub)
   .item(class=Nameclass)
     .item_rates 
       h3=rates 
     .item_content 
+      span.text_bold=des
       p=desc 
-      .item__price 
-        p=price 
+    .item__price 
+      span.price=price 
+      p=rub
     +btn('Подробнее')
 
 mixin advanPoints(title,content,name)
@@ -64,16 +65,19 @@ mixin advanPoints(title,content,name)
       img(src=name)
 
 mixin blockForm(title,text,name)      
-  h2=title
-  .content 
-    .content__text 
-      p=text 
-    +formOrder(name)
+  .block_form  
+    h2=title
+    .content 
+      .content__text 
+        p=text 
+      +formOrder(name)
 
 mixin blogItem(img,data,title,text,content)
   .blog_item 
-    img(src=img)
-    p=data 
-    h2=title 
-    p=text
-    +btn(content)
+    .blog_item_img
+      img(src=img)
+    .blog_item_content
+      p.data=data 
+      h3=title 
+      p=text
+      +btn(content)

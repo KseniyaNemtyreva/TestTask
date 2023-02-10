@@ -1,0 +1,57 @@
+.blog {
+    @apply bg-white flex items-start;
+    align-items: end;
+    flex-direction: column;
+    font-weight: 500;
+    line-height: 100%;
+    border-radius: 30px;
+    margin: 200px 0;
+    padding: 0px 90px 90px 93px;
+
+    &_title {
+        @apply relative;
+        font-size: 120px;
+        text-transform: uppercase;        
+        top: -75px;
+        & h2{
+            font-weight: bold;
+        }
+    }
+
+    &_list {
+        @apply grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 97px;
+    }
+
+    &_item {
+        &_img{
+            max-width: 405px;
+            max-height: 405px;
+        }
+        
+
+        .data {
+            color: var(--grey);
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        & h3 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            line-height: 25px;
+        }
+
+        & p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            margin-bottom: 40px;
+        }
+        .button{
+            max-width: 164px;
+        }
+
+    }
+}

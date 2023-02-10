@@ -1,0 +1,23 @@
+.questions {
+    @apply relative grid items-center;
+    font-weight: 500;
+    grid-template-columns: 290px 3fr; 
+    max-height: 685px;
+    margin-top: 360px;
+
+    &_title {
+        transform: rotate(-90deg);
+        text-transform: uppercase;
+        
+        font-size: 120px;
+        line-height: 100%;     
+
+        & h2{            
+            font-weight: bold;
+            font-stretch: ultra-condensed;
+        }  
+    }
+    &_points{
+
+    }
+}

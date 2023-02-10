@@ -15,65 +15,18 @@
       line-height: 100%;
       text-transform: uppercase;
       margin-bottom: 125px;
-    }
-
-    .order__form {
-      @apply flex;
-      font-family: 'Hind';
-
-      & .form_text {
-        @apply flex content-center text-grey;
-        padding: 18px 0;
-        padding-left: 20px;
-        background: #FFFFFF;
-        border-radius: 90px;
-        line-height: 100%;
-        max-width: 360px;
-        min-width: 340px;
-        max-height: 54px;
-        margin-bottom: 20px;
-
-
+    }  
+    .order__form{
+      .form_text{
+        @apply bg-white;
       }
-
-      .policy {
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 100%;
-        letter-spacing: -0.005em;
-
-        & .text_underline {
-          text-decoration: underline;
-        }
-      }
-
-      .checkbox {
-        margin-right: 5px;
-      }
-
-
-      .button {
-        @apply flex relative text-black;
+      .button{
         left: 103px;
-        align-items: center;
-        border-radius: 36px;
-        max-width: 231px;
-        max-height: 57px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 100%;
-        background: linear-gradient(90deg, #EDE574 0%, #E1F5C4 100%);
-
-        & a {
-          padding: 18px 20px;
-        }
       }
-
-      // .button:hover {
-      //   @apply flex bg-green;
-      // }
-    }
+    }  
   }
+
+  
 
 
   &_image {
