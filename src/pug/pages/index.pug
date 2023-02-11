@@ -67,30 +67,36 @@ block content
   //our_work
   section.our_work(id='our_work')
     h2 Наши работы
-    
-    .our_work_slider-wrapper 
-      .mySlider.fade
-        img(src="assets/img/slider/image_1.png" )
-      .mySlider.fade
-        img(src="assets/img/slider/image_1.png" )
-      .mySlider.fade
-        img(src="assets/img/slider/image_1.png" )
-      .mySlider.fade
-        img(src="assets/img/slider/image_1.png" )
-    .swiper-button-next
-    .swiper-button-prev
-    
+    swiper-container.mySwiper(style='--swiper-navigation-color: var(--grey); --swiper-pagination-color: var(--grey)' thumbs-swiper='.mySwiper2' loop='true' space-between='10' navigation='true')
+      swiper-slide
+        img(src='assets/img/slider/image_1.png')
+      swiper-slide
+        img(src='assets/img/slider/image_1.png')
+      swiper-slide
+        img(src='assets/img/slider/image_1.png')
+      swiper-slide
+        img(src='assets/img/slider/image_1.png')
+      swiper-slide
+        img(src='assets/img/slider/image_1.png')
+    swiper-container.mySwiper2(loop='true' space-between='10' slides-per-view='4' free-mode='true' watch-slides-progress='true')
+      swiper-slide
+        img(src='assets/img/slider/image_2.png')
+      swiper-slide
+        img(src='assets/img/slider/image_3.png')
+      swiper-slide
+        img(src='assets/img/slider/image_4.png')
+      swiper-slide
+        img(src='assets/img/slider/image_5.png')
     +btn('Посмотреть другие работы')
   //advantages
   section.advantages(id='adven') 
-    h2 Преимущества
-  .advantages_block    
+    h2 Преимущества   
     .advantages_content      
       .advantages_points
         +advanPoints('Современные технологии','Вся работа организована с применением современных технологий и новейшего оборудования, а также с использованием высококачественных материалов и химии, одобренных Минздравом.','assets/img/icon/tech.svg')
         +advanPoints('Профессионалы','Каждый мастер компании имеет более 7 лет успешного опыта выполнения паркетных работ.','assets/img/icon/profi.svg')
         +advanPoints('20 лет уникального опыта','За эти годы мы приобрели колоссальный опыт в этой сфере и завоевали исключительно положительную репутацию среди десятков подобных нам фирм.','assets/img/icon/exper.svg') 
-      .hadvantages_image 
+      .advantages_image 
         img(src="assets/img/advantages.png") 
     +blockForm('Проверьте нас в деле!','Мы готовы сделать идеальный паркет для Вас!','Закаpать')
   //questions
@@ -101,23 +107,23 @@ block content
       ul.questions_list
         li
           a(href='#').questions_link='Можно ли выполнить циклёвку пола без выноса мебели?'
-          img(src="assets/img/icon/vector.svg")
+            img(src="assets/img/icon/vector.svg")
           +item('Технология циклёвки паркета подразумевает направление работ от стены до стены, без остановки оборудования. Нанесение лака также нельзя останавливать, так как он быстро сохнет. Мебель затрудняет выполнение циклевания и оставлять ее в помещении тоже не желательно.')  
         li
           a(href='#').questions_link='На чем можно сэкономить?'
-          img(src="assets/img/icon/vector.svg")
+            img(src="assets/img/icon/vector.svg")
           +item('Технология циклёвки паркета подразумевает направление работ от стены до стены, без остановки оборудования. Нанесение лака также нельзя останавливать, так как он быстро сохнет. Мебель затрудняет выполнение циклевания и оставлять ее в помещении тоже не желательно.')          
         li
           a(href='#').questions_link='Сколько длится циклёвка паркета?'
-          img(src="assets/img/icon/vector.svg")
+            img(src="assets/img/icon/vector.svg")
           +item('Технология циклёвки паркета подразумевает направление работ от стены до стены, без остановки оборудования. Нанесение лака также нельзя останавливать, так как он быстро сохнет. Мебель затрудняет выполнение циклевания и оставлять ее в помещении тоже не желательно.')
         li
           a(href='#').questions_link='Циклёвку лучше выполнять до или после ремонта?'
-          img(src="assets/img/icon/vector.svg")
+            img(src="assets/img/icon/vector.svg")
           +item('Технология циклёвки паркета подразумевает направление работ от стены до стены, без остановки оборудования. Нанесение лака также нельзя останавливать, так как он быстро сохнет. Мебель затрудняет выполнение циклевания и оставлять ее в помещении тоже не желательно.')
         li
           a(href='#').questions_link='Возможна ли циклёвка паркета без пыли?'
-          img(src="assets/img/icon/vector.svg")
+            img(src="assets/img/icon/vector.svg")
           +item('Технология циклёвки паркета подразумевает направление работ от стены до стены, без остановки оборудования. Нанесение лака также нельзя останавливать, так как он быстро сохнет. Мебель затрудняет выполнение циклевания и оставлять ее в помещении тоже не желательно.')
   //blog  
   section.blog(id='blog')

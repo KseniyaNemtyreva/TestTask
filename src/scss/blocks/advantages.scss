@@ -1,0 +1,73 @@
+.advantages {
+    @apply flex;
+    flex-direction: column;
+    margin: 100px 0;
+    font-weight: 500;
+    line-height: 100%;
+
+    & h2 {
+        font-weight: bold;
+        font-size: 120px;
+        margin-bottom: 70px
+    }
+
+    &_content {
+        @apply flex;
+
+        .advantages_points {
+            @apply flex relative;
+            flex-direction: column;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 100%;
+
+
+
+            .item {
+                @apply flex;
+                line-height: 50px;
+                margin-top: 40px;
+                align-items: center;
+
+                &_text {
+                    max-width: 438px;
+                
+                    & h2{
+                        font-size: 28px; 
+                        margin-bottom: 20px;
+                    }
+
+                    & p{
+                        font-size: 18px;
+                        line-height: 120%;
+                    }
+                }
+
+                &_icon {
+                    max-width: 120px;
+                    max-height: 120px;
+                    min-width: 119px;
+                    min-height: 119px;
+                    margin-left: 48px;
+                }                
+            }
+
+        }
+
+        .advantages_image {
+            @apply relative;
+            max-width: 1144px;
+            max-height: 685px;
+            min-width: 1104px;
+            min-height: 645px;
+            margin-left: -100px;
+            z-index: -1;
+
+            & img {
+                @apply absolute;
+            }
+        }
+    }
+
+
+}

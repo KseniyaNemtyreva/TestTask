@@ -16,7 +16,9 @@
 
       .footer_navigate {
         @apply flex;
-        flex-direction: column;
+        flex-direction: column;        
+        margin-left: 255px;
+        margin-right: 170px;
 
         .nav_list{
           @apply flex;
@@ -52,7 +54,7 @@
         @apply flex;
     
         & a {
-          margin-left: 31px;
+          margin-right: 31px;
         }
       }
     }

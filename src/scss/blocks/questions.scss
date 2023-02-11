@@ -2,13 +2,14 @@
     @apply relative grid items-center;
     font-weight: 500;
     grid-template-columns: 290px 3fr; 
-    max-height: 685px;
-    margin-top: 360px;
+    min-height: 685px;
+    margin-top: 100px;
 
     &_title {
+        @apply relative;
         transform: rotate(-90deg);
         text-transform: uppercase;
-        
+        top: 190px;
         font-size: 120px;
         line-height: 100%;     
 
@@ -18,6 +19,42 @@
         }  
     }
     &_points{
+        font-size: 23px;
 
+        & li{
+            @apply bg-green;
+            border-radius: 90px;
+            padding: 27px 90px; 
+            margin: 30px 0; 
+                   
+            & a{
+                @apply flex justify-end;
+                flex-direction: row-reverse;
+
+                & img{
+                    margin-right: 30px;
+                }
+            }
+
+            .item{
+                @apply bg-white;
+                display: none;
+            }
+        }
+        & li:hover {       
+            @apply bg-yellow;
+            padding: 27px 0px 0px 0px;
+            border-radius: 30px;
+
+            & a{
+                margin-bottom: 29px;
+                margin-left: 90px;
+            }
+            .item{
+                display: block;                 
+                padding: 20px 52px;
+                border-radius: 0 0 30px 30px;
+            }
+        }        
     }
 }

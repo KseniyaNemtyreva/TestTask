@@ -83,6 +83,7 @@
   },
   "target": "web",
   "dependencies": {
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "swiper": "^9.0.4"
   }
 }
